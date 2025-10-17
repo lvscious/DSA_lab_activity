@@ -1,4 +1,6 @@
-# Bonus
+# Bonus: Shipping Cost
+bonus = "Bonus: Shipping Cost"
+print(bonus)
 weight = float(input("Weight (lbs): "))  
 destination = input("Destination (domestic/international): ").lower()  
 membership = input("Membership (standard/premium): ").lower() 
