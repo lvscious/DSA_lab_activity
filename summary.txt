@@ -1,0 +1,75 @@
+
+Summary statistics:
+   StudentID       ExamScore       HoursStudied   PreviousScore  
+ Min.   :  1.0   Min.   :  0.00   Min.   :2.000   Min.   :50.00  
+ 1st Qu.:125.8   1st Qu.: 78.00   1st Qu.:3.000   1st Qu.:73.00  
+ Median :250.5   Median : 88.50   Median :5.000   Median :85.00  
+ Mean   :250.5   Mean   : 86.30   Mean   :5.432   Mean   :82.51  
+ 3rd Qu.:375.2   3rd Qu.: 99.25   3rd Qu.:7.000   3rd Qu.:95.00  
+ Max.   :500.0   Max.   :100.00   Max.   :9.000   Max.   :97.00  
+ ParentalInvolvement     Gender      Predicted.Score     X          
+ Min.   :1.00        Min.   :0.000   Min.   : 54.00   Mode:logical  
+ 1st Qu.:2.00        1st Qu.:0.000   1st Qu.: 77.00   NA's:500      
+ Median :3.00        Median :0.000   Median : 89.00                 
+ Mean   :3.27        Mean   :0.492   Mean   : 86.45                 
+ 3rd Qu.:4.00        3rd Qu.:1.000   3rd Qu.: 99.00                 
+ Max.   :5.00        Max.   :1.000   Max.   :101.00                 
+   X.1            X.2          SUMMARY.OUTPUT         X.3           
+ Mode:logical   Mode:logical   Length:500         Length:500        
+ NA's:500       NA's:500       Class :character   Class :character  
+                               Mode  :character   Mode  :character  
+                                                                    
+                                                                    
+                                                                    
+     X.4                X.5                X.6                X.7           
+ Length:500         Length:500         Length:500         Length:500        
+ Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                            
+                                                                            
+                                                                            
+     X.8                X.9                X.10          
+ Length:500         Length:500         Length:500        
+ Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character  
+                                                         
+                                                         
+                                                         
+
+Updated 'Gender' column values:
+
+  0   1 
+254 246 
+
+Regression Summary:
+
+Call:
+lm(formula = y ~ ., data = X)
+
+Residuals:
+    Min      1Q  Median      3Q     Max 
+-72.357  -0.693  -0.064   1.110   9.085 
+
+Coefficients:
+                    Estimate Std. Error t value Pr(>|t|)    
+(Intercept)          3.40630    1.28512   2.651  0.00829 ** 
+HoursStudied         0.68519    0.38804   1.766  0.07805 .  
+PreviousScore        1.03690    0.02012  51.538  < 2e-16 ***
+ParentalInvolvement -2.12442    0.66326  -3.203  0.00145 ** 
+Gender               1.16348    0.58862   1.977  0.04864 *  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 3.487 on 495 degrees of freedom
+Multiple R-squared:  0.9311,	Adjusted R-squared:  0.9306 
+F-statistic:  1674 on 4 and 495 DF,  p-value: < 2.2e-16
+
+R-squared:
+[1] 0.9311495
+
+Adjusted R-squared:
+[1] 0.9305932
+
+F-statistic:
+   value    numdf    dendf 
+1673.624    4.000  495.000 
